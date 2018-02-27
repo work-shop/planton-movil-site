@@ -15,7 +15,8 @@ class PM_Publicity_Item extends WS_Custom_Post_Type {
         'menu_position'             => 5,
         'supports'                  => array(
                                         'title',
-                                        'revisions'
+                                        'revisions',
+                                        'thumbnail'
                                     ),
         'rewrite'                   => array(
                                         'slug' => 'publicity',

@@ -54,12 +54,16 @@ class WS_Site_Admin {
      */
     public function add_options_pages() {
         if ( function_exists('acf_add_options_page') ) {
-            acf_add_options_page(array(
-                "page_title" => "Site",
-                "capability" => "edit_posts",
-                "position" => 10,
-                "icon_url" => "dashicons-admin-home"
-            ));
+
+            /**
+             * We're not using an options page here.
+             */
+            // acf_add_options_page(array(
+            //     "page_title" => "Site",
+            //     "capability" => "edit_posts",
+            //     "position" => 10,
+            //     "icon_url" => "dashicons-admin-home"
+            // ));
         }
     }
 

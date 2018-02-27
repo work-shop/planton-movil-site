@@ -1,7 +1,63 @@
 {
     "key": "group_5a9465193a71a",
     "title": "Publicity",
-    "fields": false,
+    "fields": [
+        {
+            "key": "field_5a95bee3a8643",
+            "label": "Link",
+            "name": "link",
+            "type": "text",
+            "instructions": "Add an external link to this press story or show on the web.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a95bf3ca8644",
+            "label": "Publication or Gallery Name",
+            "name": "name",
+            "type": "text",
+            "instructions": "Use this field to specify the name of the publication hosting this article, or gallery hosting this show.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a95be90a8642",
+            "label": "Date",
+            "name": "date",
+            "type": "date_picker",
+            "instructions": "Use this field to specify the date that this publication or show happened.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        }
+    ],
     "location": [
         [
             {
@@ -16,8 +72,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1519674662
+    "modified": 1519763544
 }

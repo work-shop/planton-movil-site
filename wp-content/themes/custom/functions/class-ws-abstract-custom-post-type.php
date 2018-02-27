@@ -31,7 +31,7 @@ abstract class WS_Custom_Post_Type {
                         'insert_into_item'              => 'Insert into ' . $singular_name,
                         'uploaded_to_this_item'         => 'Uploaded to this ' . $singular_name,
                         'featured_image'                => $singular_name . ' Image',
-                        'set_featured_image'            => 'Set ' . $singular_name . 'Image',
+                        'set_featured_image'            => 'Set ' . $singular_name . ' Image',
                         'remove_featured_image'         => 'Remove ' . $singular_name . ' Image',
                         'use_featured_image'            => 'Use as ' . $singular_name . ' Image',
                         'menu_name'                     => $plural_name // Default
