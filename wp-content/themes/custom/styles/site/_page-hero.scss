@@ -1,0 +1,45 @@
+.page-hero {
+    height:80vh;
+}
+
+.page-hero-content {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/**
+ * Content for the page page-hero-title-slash
+ */
+
+.page-hero-tagline {
+    margin-bottom: 2em;
+}
+
+.page-hero-title-english {
+    @extend .bold;
+
+    display: block;
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.page-hero-title-slash {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.page-hero-title-espanol {
+    @extend .bold;
+
+    display: block;
+    text-align: right;
+}
+
+.page-hero-description {
+    color:$brand;
+}
+
+.page-hero-description-espanol {
+    margin-top: 2em;
+}

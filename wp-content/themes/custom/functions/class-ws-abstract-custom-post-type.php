@@ -46,7 +46,7 @@ abstract class WS_Custom_Post_Type {
                     'public' => true,
                     'menu_position' => WS_Custom_Post_Type::default_for_key( 'menu_position', $options, 5), // Before Posts Divider
                     'menu_icon' => WS_Custom_Post_Type::default_for_key( 'menu_icon', $options, 'dashicons-posts'),
-                    'capabilities' => array(str_replace(' ', '_', strtolower( $singular_name ) ), str_replace(' ', '_', strtolower( $plural_name )) ),
+                //    'capability_type' => array(str_replace(' ', '_', strtolower( $singular_name ) ), str_replace(' ', '_', strtolower( $plural_name )) ),
                     'hierarchical' => WS_Custom_Post_Type::default_for_key( 'hierarchical', $options, false),
                     'supports' => WS_Custom_Post_Type::default_for_key( 'supports', $options, array()),
                     'taxonomies' => array_merge( WS_Custom_Post_Type::default_for_key( 'taxonomy', $options, array()), array() ),

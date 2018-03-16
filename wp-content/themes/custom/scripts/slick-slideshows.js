@@ -6,15 +6,19 @@ function slickSlideshows( config ) {
 	console.log('slick-slideshows.js loaded');
 
 	$( document ).ready( function() {
-		$('.slick-default').slick({
+
+        var elem = $('.slick-home');
+
+	    elem.slick({
 			slidesToShow: config.slidesToShow,
 			dots: config.dots,
-			arrows: config.arrows,
-			autoplay: config.autoplay,
-			fade: config.fade,
+			arroews: config.arrows,
+			autoplay: false,
 			autoplaySpeed: config.autoplaySpeed,
-			speed: config.speed
+			speed: config.speed,
+            infinite: false
 		});
+
 	});
 
 }

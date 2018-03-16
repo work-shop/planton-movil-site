@@ -198,7 +198,26 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "-1",
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5aa6d8e592937",
+                                    "label": "Español",
+                                    "name": "espanol",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
@@ -344,5 +363,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1519761373
+    "modified": 1520887561
 }

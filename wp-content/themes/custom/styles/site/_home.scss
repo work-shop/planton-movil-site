@@ -1,2 +1,52 @@
 
 /* home page */
+
+
+.home-stage {
+    overflow-y: hidden;
+}
+
+
+#background {
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+}
+
+
+.home-image-block {
+    position: absolute;
+    top: 0;
+}
+
+.home-image-mask {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: attr(data-tint-color color, #ffffff);
+    opacity: attr(data-opacity number, 0.6);
+}
+
+.home-image {
+    width:auto;
+}
+
+.home-slide {
+    height:calc(100vh - #{$nav-height});
+    position: relative;
+    overflow-y: scroll;
+    padding-top: 10vh;
+}
+
+.home-slide-content-relative {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.home-slide-tagline {
+    @include text-size($text-tagline);
+}

@@ -1,0 +1,52 @@
+.walk-card-box {
+    position: relative;
+    display: block;
+    border: none;
+}
+
+.walk-card-box:hover {
+    .walk-card-location h4, .walk-card-date h3 {
+        color: $link;
+    }
+
+    border: none;
+}
+
+.walk-card-data {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.walk-card-location {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+
+    width:30%;
+
+    text-align: left;
+}
+
+.walk-card-date {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40%;
+
+    text-align: right;
+}
+
+.clipped-blob {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%)translateY(-50%);
+
+    background-color: salmon;
+}

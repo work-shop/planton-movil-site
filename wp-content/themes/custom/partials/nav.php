@@ -1,27 +1,26 @@
-
+<menu class="menu container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <span class="icon menu-toggle white" data-icon="ﬂ"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <?php wp_nav_menu( array('menu' => 4) ); ?>
+        </div>
+    </div>
+</menu>
 <nav id="nav" class="fixed">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="logo col-sm-3 col-xs-6">
+            <div class="col-xs-1 col-sm-1">
+                <span class="icon menu-toggle" data-icon="Í"></span>
+            </div>
+			<div class="logo">
 				<a href="/">
 					<?php get_template_part('partials/logo'); ?>
 				</a>
 			</div>
-			<div class="col-sm-9 col-xs-6" id="nav-menu">
-				<?php wp_nav_menu(); ?>
-			</div>
-
 		</div>
 	</div>
 </nav>
-<div id="mobile-nav">
-	<ul class="mobile-nav-items">
-		<?php wp_nav_menu(); ?>
-	</ul>
-</div>
-<div class="hamburger menu-toggle">
-	<span class="hamburger-line hl-1"></span>
-	<span class="hamburger-line hl-2"></span>
-	<span class="hamburger-line hl-3"></span>
-</div>
-

@@ -9,14 +9,24 @@ import { modals } from './modals.js';
 import { scrollSpy } from './scroll-spy.js';
 import { menuToggle } from './menu-toggle.js';
 import { slickSlideshows } from './slick-slideshows.js';
+import { homeBackground } from './home-background.js';
+import { imageMask } from './image-mask.js';
+import { imageClipPath } from './image-clip-path.js';
+import { markupColor } from './markup-color.js';
 
 loading(config.loading);
 linksNewtab(config.linksNewtab);
 stickyNav(config.stickyNav);
 jumpLinks(config.jumpLinks);
 modals(config.modals);
-scrollSpy(config.scrollSpy);
+// scrollSpy(config.scrollSpy);
 menuToggle(config.menuToggle);
+homeBackground( config.home );
 slickSlideshows(config.slickSlideshows);
+imageClipPath( config.imageClipPath );
+markupColor( config.markupColor );
+
+
+imageMask( config.imageMask );
 
 console.log('main.js loaded');

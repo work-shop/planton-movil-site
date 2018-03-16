@@ -11,7 +11,7 @@ const webpack = require('webpack');
 const paths = {
     src: './wp-content/themes/custom',
     dest: './wp-content/themes/custom/compiled',
-    public: '/wp-content/themes/custom'
+    public: '/wp-content/themes/custom/compiled'
 };
 
 const script = {

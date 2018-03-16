@@ -35,3 +35,4 @@ services:
       - ${VOLUME_BASE_PATH}/wp-content/plugins:/var/www/html/wp-content/plugins
       - ${VOLUME_BASE_PATH}/wp-content/themes:/var/www/html/wp-content/themes
       - wordpress:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini

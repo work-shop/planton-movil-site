@@ -11,7 +11,7 @@ class PM_Publicity_Item extends WS_Custom_Post_Type {
     protected static $options = array(
         'menu_icon'                 => 'dashicons-id-alt',
         'hierarchical'              => false,
-        'has_archive'               => true,
+        'has_archive'               => false,
         'menu_position'             => 5,
         'supports'                  => array(
                                         'title',
@@ -25,7 +25,6 @@ class PM_Publicity_Item extends WS_Custom_Post_Type {
                                         'pages' => true
                                     ),
         'taxonomy'                => array( 'category' )
-
     );
 
 

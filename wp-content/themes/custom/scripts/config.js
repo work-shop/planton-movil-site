@@ -2,8 +2,8 @@
 
 var global_config = {
     navHeight: 75,
-    mobileNavHeight: 50,  
-    navPadding: 75,      
+    mobileNavHeight: 50,
+    navPadding: 75,
     transitionDuration: 1000,
     mobileBreakpoint: 768
 };
@@ -14,7 +14,7 @@ var config = {
         navHeight: global_config.headerHeight,
         mobileNavHeight: global_config.headerHeight,
         mobileBreakpoint: global_config.mobileBreakpoint,
-        activeOnMobile: true        
+        activeOnMobile: true
     },
     linksNewTab: {
     },
@@ -61,8 +61,23 @@ var config = {
         arrows: true,
         autoplay: true,
         fade: true,
-        autoplaySpeed: 5000,
-        speed: 700        
+        autoplaySpeed: 10000,
+        speed: 700
+    },
+    home: {
+        background: {
+            selector: '#background'
+        },
+        slides: 4
+    },
+    imageMask: {
+        defaultColor: '#ffffff',
+        defaultOpacity: 0.6,
+        baseVW: 55
+
+    },
+    imageClipPath: {
+
     }
 };
 

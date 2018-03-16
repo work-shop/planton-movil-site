@@ -8,6 +8,13 @@ The keys in each list correspond to the list of breakpoints defined in `_respons
 If a key is supplied that is not in the $breakpoints list, the mixin will throw an error.
 -------------------------------------------------------- */
 
+$text-tagline: (
+  xs: (36px, 40px),
+  sm: (40px, 44px),
+  md: (44px, 48px),
+  lg: (48px, 52px),
+  xl: (68px, 72px)
+);
 
 //default sizes
 $text-massive: (
@@ -15,7 +22,7 @@ $text-massive: (
   sm: (27px, 27px),
   md: (36px, 36px),
   lg: (45px, 46px),
-  xl: (55px, 56px)  
+  xl: (55px, 56px)
 );
 
 $text-huge: (
@@ -23,7 +30,7 @@ $text-huge: (
   sm: (17px, 24px),
   md: (24px, 30px),
   lg: (29px, 40px),
-  xl: (33px, 35px)  
+  xl: (33px, 35px)
 );
 
 $text-large: (
@@ -67,5 +74,3 @@ $text-page-body: (
   lg: (18px, 30px),
   xl: (19px, 32px)
 );
-
-

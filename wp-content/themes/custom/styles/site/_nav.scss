@@ -1,3 +1,38 @@
+menu {
+    width: 100%;
+    background-color: $brand-background;
+    position: fixed;
+    top:0;
+    left:0;
+    margin:0;
+    padding-top:25px;
+
+    transition-duration: $nav-transition-duration;
+
+    z-index: 100;
+
+}
+
+.menu-closed menu {
+    transform:translateY(-100%);
+}
+
+
+.menu-open menu {
+    transform:translateY(0%);
+}
+
+.menu-site-navigation-container ul li {
+    padding-top:1em;
+    padding-bottom:1em;
+
+    a {
+        color: white;
+    }
+}
+
+
+
 
 $text-nav: (
 	xs: (16px, 53px),
@@ -8,13 +43,17 @@ $text-nav: (
 	);
 
 #nav{
+    position:absolute;
+
+    transition-duration: $nav-transition-duration;
+
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: $nav-height;
-	background: $ultra-light;
 	z-index: 7;
 	padding-top: 15px;
+    background-color: transparent;
 
 	&.fixed{
 		position: fixed;
@@ -32,7 +71,7 @@ $text-nav: (
 
 	li{
 		display: inline-block;
-		margin-left: 10px;	
+		margin-left: 10px;
 	}
 
 	a{
@@ -43,14 +82,15 @@ $text-nav: (
 		height: 50px;
 		line-height: 50px;
 		vertical-align: middle;
+        border-bottom: none;
 
 		&:hover{
-			color: $brand;
+			color: $link;
 		}
 
 		@media screen and (max-width: $lg) {
 			padding: 0 10px;
-		}			
+		}
 
 		@media screen and (max-width: $sm) {
 			padding: 0 9px;
@@ -60,7 +100,7 @@ $text-nav: (
 
 		@media screen and (max-width: $xs) {
 			display: none;
-		}		
+		}
 	}
 
 }
@@ -69,24 +109,16 @@ $text-nav: (
 
 	a{
 		display: block;
+
+        svg {
+            width: 150px;
+        }
+
 	}
 }
 
-
-
-#mobile-nav{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	right: -100%;
-	top: 0;
-	background: $brand;
-	z-index: 7;
+.hamburger-line {
+    width:50px;
+    height:4px;
+    background-color: black;
 }
-
-.mobile-nav-open{
-	#mobile-nav{
-		right: 0;
-	}
-}
-

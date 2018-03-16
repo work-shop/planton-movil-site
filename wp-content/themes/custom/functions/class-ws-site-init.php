@@ -46,6 +46,7 @@ class WS_Site {
     public function enqueue_scripts_and_styles() {
         if ( function_exists( 'get_template_directory_uri' ) && function_exists( 'wp_enqueue_style' ) && function_exists( 'wp_enqueue_script' ) ) {
 
+            $font_css = '/fonts/fonts.css';
             $main_css = '/styles/bundle.css';
             $main_js = '/scripts/bundle.js';
 
@@ -55,7 +56,8 @@ class WS_Site {
             $main_css_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffixes for cache-busting.
             $main_js_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffixes for cache-busting.
 
-            wp_enqueue_style('main-css', $compiled_resources_uri . $main_css, array(), $main_css_ver);
+            wp_enqueue_style('font-css', get_template_directory_uri() . $font_css, array());
+            wp_enqueue_style('main-css', $compiled_resources_uri . $main_css, array('font-css'), $main_css_ver);
             wp_enqueue_script('jquery');
             wp_enqueue_script('main-js', $compiled_resources_uri . $main_js, array('jquery'), $main_js_ver, true);
 

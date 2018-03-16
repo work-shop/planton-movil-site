@@ -1,2 +1,58 @@
 
 /* footer */
+
+#footer {
+    margin-top:2em;
+}
+
+.menu-footer-navigation-container ul {
+
+    li {
+        display: inline;
+    }
+
+}
+
+.menu-item a {
+    @extend .h5;
+
+    margin-right:3em;
+    color:$medium;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        color: $link;
+        border-bottom: 2px solid $link;
+    }
+
+}
+
+.social {
+    text-align: right;
+}
+
+.social-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    border-bottom: none;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+.vimeo {
+    background-image:url('../../images/vimeo.png');
+
+}
+
+.pinterest {
+    background-image:url('../../images/pinterest.png');
+
+}
+
+.site-credit a h6 {
+    color: $light;
+}

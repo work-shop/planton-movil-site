@@ -1,6 +1,6 @@
 {
     "key": "group_5a94760d3e3cb",
-    "title": "Page Header",
+    "title": "Page Hero",
     "fields": [
         {
             "key": "field_5a9476075f7b8",
@@ -214,5 +214,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1519679426
+    "modified": 1521209921
 }

@@ -112,6 +112,21 @@
             "maxlength": ""
         },
         {
+            "key": "field_5aa6ca5b24f25",
+            "label": "Color",
+            "name": "color",
+            "type": "color_picker",
+            "instructions": "Use this field to select a distictive color for this walk. This color will be used to represent the walk on the walk-with-us page, and will show up on the walk's own page as well.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
             "key": "field_5a9467db35904",
             "label": "Upcoming?",
             "name": "upcoming",
@@ -361,6 +376,23 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5aa6dc3658696",
+                    "label": "Workshop Date",
+                    "name": "workshop_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "Ymd",
+                    "first_day": 1
+                },
+                {
                     "key": "field_5a94715adf3b3",
                     "label": "Workshop Description",
                     "name": "workshop_description",
@@ -476,6 +508,61 @@
             "esc_html": 0
         },
         {
+            "key": "field_5aa6e77624ee8",
+            "label": "About The Walk",
+            "name": "about_the_walk",
+            "type": "group",
+            "instructions": "Add a description of the walk here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5aa6e7ce24ee9",
+                    "label": "English",
+                    "name": "english",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5aa6e7da24eea",
+                    "label": "Español",
+                    "name": "espanol",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
             "key": "field_5a946a38de902",
             "label": "Sounds of the Walk",
             "name": "sound",
@@ -564,12 +651,28 @@
                     "ajax": 0,
                     "return_format": "value",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5aa6e72b24ee7",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "url",
+                    "instructions": "Optionally, add a link to this image. If you add a link, clicking the image will take the visitor to that URL.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         },
         {
             "key": "field_5a94689f35907",
-            "label": "Sponsors, Shows, and Press",
+            "label": "Sponsors, Partners, Shows, and Press",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -585,7 +688,7 @@
         },
         {
             "key": "field_5a94693a8c0fd",
-            "label": "Lists of Sponsors, Shows, and Publicity",
+            "label": "Lists of Sponsors, Partners Shows, and Publicity",
             "name": "",
             "type": "message",
             "instructions": "",
@@ -596,7 +699,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Use this group of fields to add sponsors, shows, and press-links to this walk.",
+            "message": "Use this group of fields to add sponsors, partners, shows, and press-links to this walk.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -661,6 +764,86 @@
                     "type": "image",
                     "instructions": "Add a high-quality logo for this sponsor here.",
                     "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5aa6e81224eeb",
+            "label": "Partners",
+            "name": "partners",
+            "type": "repeater",
+            "instructions": "Use this field to add partners (non-monetary contributors) to the walk.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5aa6e83a24eec",
+                    "label": "Partner Name",
+                    "name": "partner_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "18",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aa6e85524eed",
+                    "label": "Partner URL",
+                    "name": "partner_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5aa6e85d24eee",
+                    "label": "Partner Logo",
+                    "name": "partner_logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -752,5 +935,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519678948
+    "modified": 1521225929
 }

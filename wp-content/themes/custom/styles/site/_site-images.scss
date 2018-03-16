@@ -1,0 +1,55 @@
+/**
+ * These definitions deal with styling overlaid images on the site.
+ */
+
+.image-box {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0%;
+    left:0%;
+
+}
+
+.walk-card-image-box {
+
+}
+
+.clipped-image {
+     clip-path: polygon(0% 0%, 65% 0%, 65% 25%, 100% 25%, 100% 100%, 35% 100%, 35% 85%, 0% 85%);
+}
+
+
+.image-mask {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+
+    display:none;
+}
+
+.masked-image {
+    position: absolute;
+
+    width:75vw;
+    height:auto;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+[data-opacity] {
+    opacity: attr(data-opacity number, $default-opacity);
+}
+
+[data-tint-color] {
+    background-color: attr(data-tint-color color, $default-tint-color);
+}
