@@ -1,10 +1,44 @@
 
 @font-face {
 	font-family: 'modern_pictograms_proregular';
-	src: url('modernpictogramspro_234.eot');
-	src: url('modernpictogramspro_234?#iefix') format('embedded-opentype'),
-		url('modernpictogramspro_234.woff') format('woff'),
-		url('modernpictogramspro_234.ttf') format('truetype');
+	src: url('modernpictogramspro_234.ttf') format('truetype'),
+            url('modernpictogramspro_234.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'matol';
+    src: url('MatolRegular.ttf') format('truetype'),
+         url('MatolRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'matol';
+    src: url('MatolMedium.ttf') format('truetype'),
+         url('MatolMedium.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'minimal mono';
+    src: url('MinimalMonoRegular.ttf') format('truetype'),
+         url('MinimalMonoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'minimal mono';
+    src: url('MinimalMonoBlack.ttf') format('truetype'),
+         url('MinimalMonoBlack.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
