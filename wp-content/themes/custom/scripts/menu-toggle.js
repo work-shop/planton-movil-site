@@ -4,7 +4,7 @@ function menuToggle( config ) {
 	console.log('menu-toggle.js loaded');
 
     function resizeTrigger() {
-        $('.' + config.bodyOnClass + ' #content' ).css({ transform: 'translateY(' + $('menu').height() + 'px)' });
+        $('.' + config.bodyOnClass + ' #content, .'  + config.bodyOnClass + ' footer').css({ transform: 'translateY(' + $('menu').height() + 'px)' });
     }
 
 
@@ -25,14 +25,14 @@ function menuToggle( config ) {
 			$(config.menuToggleSelector).removeClass('closed').addClass('open');
 			$(config.blanketSelector).removeClass('off').addClass('on');
 			$('body').removeClass(config.bodyOffClass).addClass(config.bodyOnClass);
-            $('#content').css({ transform: 'translateY(' + $('menu').outerHeight() + 'px)' },  250);
+            $('#content, footer').css({ transform: 'translateY(' + $('menu').outerHeight() + 'px)' },  250);
             $('#nav').css({ transform: 'translateY(' + $('menu').outerHeight() + 'px)' }, 250);
 		}
 		else if($('body').hasClass(config.bodyOnClass)){
 			$(config.menuToggleSelector).removeClass('open').addClass('closed');
 			$(config.blanketSelector).removeClass('on').addClass('off');
 			$('body').removeClass(config.bodyOnClass).addClass(config.bodyOffClass);
-            $('#content').css({ transform: 'translateY(0px)' }, 250);
+            $('#content, footer').css({ transform: 'translateY(0px)' }, 250);
             $('#nav').css({ transform: 'translateY(0px)' }, 250);
 		}
 

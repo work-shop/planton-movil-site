@@ -6,7 +6,6 @@ import { linksNewtab } from './links-newtab.js';
 import { stickyNav } from './sticky-nav.js';
 import { jumpLinks } from './jump-links.js';
 import { modals } from './modals.js';
-import { scrollSpy } from './scroll-spy.js';
 import { menuToggle } from './menu-toggle.js';
 import { slickSlideshows } from './slick-slideshows.js';
 import { homeBackground } from './home-background.js';

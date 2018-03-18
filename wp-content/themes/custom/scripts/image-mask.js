@@ -54,13 +54,21 @@ function imageMask( config ) {
             var elem = $( this );
 
             const color = elem.data('tint-color');
+
+            elem.css({
+                backgroundColor: color || config.defaultColor
+            });
+
+        });
+
+        $('[data-opacity]').each( function() {
+            var elem = $( this );
+
             const opacity = elem.data('opacity');
 
             elem.css({
-                backgroundColor: color || config.defaultColor,
                 opacity: opacity || config.defaultOpacity
             });
-
         });
 
         $('.masked-image').each( computePageHeroImageSize );

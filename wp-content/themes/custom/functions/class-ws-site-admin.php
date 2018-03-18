@@ -94,6 +94,8 @@ class WS_Site_Admin {
         unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
     }
 
+
+
 }
 
 ?>

@@ -112,6 +112,13 @@ p{
 	letter-spacing: .09em;
 }
 
+.small {
+    @include text-size($text-medium-small);
+}
+
+.smaller {
+    @include text-size($text-small);
+}
 
 
 //typography colors

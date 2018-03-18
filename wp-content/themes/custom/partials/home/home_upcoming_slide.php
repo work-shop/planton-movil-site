@@ -1,10 +1,12 @@
 <?php if ($walk = get_field( 'upcoming_walk', 8 )[0] ) : ?>
     <div class="home-slide row">
-        <div class="home-slide-content-relative offset-sm-2 col-sm-8">
-            <a href="<?php echo get_the_permalink( $walk ); ?>">
-                <h2 class="home-slide-upcoming-walk bold mb1"><?php echo get_field( 'date', $walk ); ?></h2>
-                <h2 class="home-slide-upcoming-walk bold mb1"><?php echo get_field( 'location', $walk ); ?></h2>
-            </a>
+        <div class="home-slide-content-relative col-sm-12">
+            <?php
+                $single = false;
+                $even = true;
+                $post = $walk;
+            ?>
+            <?php include( locate_template('partials/cards/past_walk.php') ); ?>
         </div>
     </div>
 <?php endif; ?>

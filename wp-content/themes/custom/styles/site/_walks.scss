@@ -4,7 +4,7 @@
     border: none;
 }
 
-.walk-card-box:hover {
+a.walk-card-box:hover {
     .walk-card-location h4, .walk-card-date h3 {
         color: $link;
     }
@@ -50,3 +50,87 @@
 
     background-color: salmon;
 }
+
+
+/** ===========
+ * Single Walks
+ * ============
+ */
+
+ .walk-gallery-image-block {
+     display: block;
+     position: relative;
+     border-bottom: none;
+
+     &:hover{
+        border-bottom: none;
+     }
+ }
+
+ .walk-gallery-image-block {
+     &:hover .walk-gallery-image-link-icon {
+         display: none;
+     }
+
+     &:hover .walk-gallery-image-link-icon-title {
+         opacity: 1 !important;
+     }
+
+ }
+
+.walk-gallery-image {
+    display:block;
+    transition-duration: $nav-transition-duration;
+
+}
+
+
+
+
+ a .walk-gallery-image-mask {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: $medium;
+
+    &:hover {
+        opacity:.8;
+    }
+
+ }
+
+a .walk-gallery-image-link-icon {
+
+    position: absolute;
+    top:2.5%;
+    left:2.5%;
+
+    color:white;
+}
+
+ a .walk-gallery-image-link-title {
+    position: absolute;
+    top:50%;
+    left:50%;
+
+    transform: translateX(-50%)translateY(-50%);
+
+    opacity: 1;
+
+ }
+
+ .affiliate-logo-link {
+     border:none;
+     &:hover {
+         border:none;
+     }
+ }
+
+ .publicity-link:hover {
+     p {
+         color:$link;
+     }
+ }

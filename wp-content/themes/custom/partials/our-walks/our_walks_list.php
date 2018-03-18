@@ -1,7 +1,13 @@
-<?php $posts = get_posts( array(
+<?php
+
+$posts = get_posts( array(
     'posts_per_page' => -1,
     'post_type' => 'walks'
-) ); ?>
+) );
+
+$single = false;
+
+?>
 <div class="container-fluid">
     <?php foreach( $posts as $i => $post) : ?>
 

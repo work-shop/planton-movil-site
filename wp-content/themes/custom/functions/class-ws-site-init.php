@@ -64,6 +64,14 @@ class WS_Site {
         }
     }
 
+    /**
+     * A simple, boolean valued function to determine whether an ACF image
+     * is portait or landscape, natively.
+     */
+    public static function portrait( $image ) {
+        return $image['width'] <= $image['height'];
+    }
+
 }
 
 ?>
