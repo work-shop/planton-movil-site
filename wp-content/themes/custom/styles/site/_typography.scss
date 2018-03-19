@@ -75,9 +75,14 @@ p{
 
 //formatting
 
-.bold,strong{
+.weight-medium {
+    font-family: $font-bold;
+    font-weight: bold;
+}
+
+.bold, .weight-bold, strong{
 	font-family: $font-bold;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .italic,em{
@@ -186,4 +191,8 @@ p{
 
 .espanol {
     color: $espanol;
+}
+
+.link {
+    color:$link;
 }

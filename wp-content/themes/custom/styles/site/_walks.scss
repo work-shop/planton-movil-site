@@ -4,6 +4,14 @@
     border: none;
 }
 
+.upcoming-walk-card .walk-card-box {
+    height: $upcoming-walk-height;
+}
+
+[data-single].upcoming-walk-card .walk-card-box {
+    height: 2 * $upcoming-walk-height;
+}
+
 a.walk-card-box:hover {
     .walk-card-location h4, .walk-card-date h3 {
         color: $link;
@@ -22,10 +30,10 @@ a.walk-card-box:hover {
 
 .walk-card-location {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 5%;
 
-    width:30%;
+    width:40%;
 
     text-align: left;
 }
@@ -34,7 +42,17 @@ a.walk-card-box:hover {
     position: absolute;
     top: 5%;
     right: 5%;
-    width: 40%;
+    width: 50%;
+
+    text-align: right;
+}
+
+.walk-card-upcoming {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+
+    width: 50%;
 
     text-align: right;
 }
@@ -49,6 +67,13 @@ a.walk-card-box:hover {
     transform: translateX(-50%)translateY(-50%);
 
     background-color: salmon;
+}
+
+.upcoming-walk-card .clipped-blob {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: $default-opacity;
 }
 
 

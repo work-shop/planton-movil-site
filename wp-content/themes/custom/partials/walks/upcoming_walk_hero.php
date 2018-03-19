@@ -2,4 +2,6 @@
 
     <?php include( locate_template('partials/cards/upcoming_walk.php') ); ?>
 
+    <?php include( locate_template('partials/walks/walk_information.php') ); ?>
+
 </section>

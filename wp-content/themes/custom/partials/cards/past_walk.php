@@ -3,7 +3,7 @@
     $location = get_field('location', $post->ID );
     $date = DateTime::createFromFormat( 'Ymd', get_field('date', $post->ID ) );
     $color = get_field('color', $post->ID );
-    $offset = (!$single) ? (($even) ? '4' : '1') : '0';
+    $offset = ($single || $home) ? '0' : (($even) ? '4' : '1');
     $image_url = ($single) ? $image['url'] : $image['sizes']['large'];
     $title_tag = ($single) ? 'h2' : 'h4';
     $date_tag = ($single) ? 'h2' : 'h3';
@@ -11,7 +11,7 @@
 ?>
 
 <div class="row walk-card mb8" data-id="<?php echo $post->ID; ?>" <?php echo ($single) ? 'data-single' : 'data-list'; ?>>
-    <div class="col-xs-10 offset-xs-1 col-sm-<?php echo ($single) ? '12' : '7'; ?> offset-sm-<?php echo $offset; ?>">
+    <div class="col-xs-10 offset-xs-1 col-sm-<?php echo ($single || $home) ? '12' : '7'; ?> offset-sm-<?php echo $offset; ?>">
         <?php if (!$single) : ?>
         <a class="walk-card-box" href="<?php echo get_permalink( $post->ID ); ?>">
         <?php else :?>

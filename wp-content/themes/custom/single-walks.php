@@ -4,6 +4,7 @@
 
 $id = get_the_ID();
 $single = true;
+$home = false;
 
 ?>
 

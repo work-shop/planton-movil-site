@@ -5,6 +5,7 @@ $images = get_field('images', $id);
 $color = get_field( 'color', $id );
 ?>
 
+<?php if ( $images ) : ?>
 <section class="walk-gallery container-fluid mb8">
     <div class="walk-gallery-title row">
         <div class="col-sm-4">
@@ -29,6 +30,7 @@ $color = get_field( 'color', $id );
     </div>
     <?php endif; ?>
 
-    <?php include( locate_template('partials/walks/walk_gallery_images.php') ); ?>
+        <?php include( locate_template('partials/walks/walk_gallery_images.php') ); ?>
 
 </section>
+<?php endif; ?>

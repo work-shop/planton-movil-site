@@ -21,12 +21,12 @@
             <div class="page-hero-description row">
                 <div class="col-sm-6">
                     <p class="page-hero-description-english english">
-                        <?php echo $desc['english']; ?>
+                        <span class="color-backed"><?php echo $desc['english']; ?>
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="page-hero-description-espanol espanol">
-                        <?php echo $desc['espanol']; ?>
+                        <span class="color-backed"><?php echo $desc['espanol']; ?></span>
                     </p>
                 </div>
             </div>

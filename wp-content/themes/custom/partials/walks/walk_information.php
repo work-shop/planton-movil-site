@@ -42,17 +42,23 @@
     <div class="offset-xs-0 offset-sm-4 offset-md-0 col-sm-8 col-xs-12 col-md-4">
         <div class="row">
             <div class="metadata-block mb2 col-md-12 col-xs-4">
-                <h6 class="metadata-header"><span class="english bold">Started From</span></h6>
+                <h6 class="metadata-header"><span class="english bold">
+                    <?php if ( $upcoming ) : ?>Starts At <?php else : ?> Started From <?php endif; ?>
+                </span></h6>
                 <p class=" metadata-content small "><?php echo $started; ?></p>
             </div>
             <div class="metadata-block mb2 col-md-12  col-xs-4">
-                <h6 class="metadata-header bold"><span class="english bold">Ended At</span></h6>
+                <h6 class="metadata-header bold"><span class="english bold">
+                    <?php if ( $upcoming ) : ?>Will End At <?php else : ?> Ended At <?php endif; ?>
+                </span></h6>
                 <p class=" metadata-content small "><?php echo $ended; ?></p>
             </div>
+            <?php if ( !$upcoming ) : ?>
             <div class="metadata-block col-md-12 col-xs-4">
                 <h6 class="metadata-header bold"><span class="english bold">Participants</span></h6>
                 <p class=" metadata-content small "><?php echo $participants; ?></p>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>

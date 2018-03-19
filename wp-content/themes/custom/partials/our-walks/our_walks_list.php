@@ -6,6 +6,7 @@ $posts = get_posts( array(
 ) );
 
 $single = false;
+$home = false;
 
 ?>
 <div class="container-fluid">

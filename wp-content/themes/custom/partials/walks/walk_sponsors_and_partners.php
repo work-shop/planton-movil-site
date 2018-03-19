@@ -10,18 +10,21 @@
         </div>
 
         <div class="col-sm-12 mb4">
-        <div class="row">
+
         <?php foreach ($sponsors as $i => $sponsor) : ?>
-            <div class="col-sm-4 sponsor">
+            <div class="row">
+            <div class="col-sm-6 sponsor">
                 <a class="affiliate-logo-link" href="<?php echo $sponsor['sponsor_url']; ?>" target="_blank">
                     <img src="<?php echo $sponsor['sponsor_logo']['sizes']['medium']; ?>" alt="">
                 </a>
             </div>
+            </div>
         <?php endforeach; ?>
-        </div>
+
         </div>
     </div>
     <?php endif; ?>
+
     <?php if ( $partners && count( $partners ) > 0 ) : ?>
     <div class="row">
         <div class="col-sm-12">
@@ -31,15 +34,17 @@
             </h5>
         </div>
         <div class="col-sm-12 mb4">
-        <div class="row">
+
         <?php foreach ($partners as $i => $partner) : ?>
+            <div class="row">
             <div class="col-sm-4 partner affiliate-logo">
                 <a class="affiliate-logo-link" href="<?php echo $partner['partner_url']; ?>" target="_blank">
                     <img src="<?php echo $partner['partner_logo']['sizes']['medium']; ?>" alt="">
                 </a>
             </div>
+            </div>
         <?php endforeach; ?>
-        </div>
+
         </div>
     </div>
     <?php endif; ?>

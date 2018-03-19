@@ -34,11 +34,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'minimal mono';
+    src: url('MinimalMonoBold.ttf') format('truetype'),
+         url('MinimalMonoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'minimal mono';
     src: url('MinimalMonoBlack.ttf') format('truetype'),
          url('MinimalMonoBlack.woff') format('woff');
-    font-weight: bold;
+    font-weight: bolder;
     font-style: normal;
 }

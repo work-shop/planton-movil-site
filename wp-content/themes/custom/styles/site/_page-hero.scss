@@ -43,3 +43,28 @@
 .page-hero-description-espanol {
     margin-top: 2em;
 }
+
+
+
+.section-title-english {
+    @extend .bold;
+
+    text-align: left;
+}
+
+.section-title-slash {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.section-title-espanol {
+    @extend .bold;
+
+    text-align: left;
+}
+
+// .color-backed {
+//     background-color: $brand;
+//     color: white;
+//     padding: .5em;
+// }

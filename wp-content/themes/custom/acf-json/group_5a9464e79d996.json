@@ -151,7 +151,7 @@
             "name": "header_image",
             "type": "image",
             "instructions": "Select an image to represent this walk.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -230,7 +230,7 @@
             "name": "posters",
             "type": "gallery",
             "instructions": "Upload 1-4 posters that represent this walk.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -587,7 +587,7 @@
             "name": "images",
             "type": "repeater",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -935,5 +935,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1521225929
+    "modified": 1521482845
 }

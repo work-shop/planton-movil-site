@@ -1,4 +1,4 @@
-<div id="home-slideshow" class="home-slideshow container slick-home">
+<div id="home-slideshow" class="home-slideshow container-fluid slick-home">
 
     <?php get_template_part('partials/home/home_intro_slide'); ?>
 

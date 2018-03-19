@@ -1,8 +1,10 @@
 <?php get_template_part('partials/header'); ?>
 
-<div class="publicity-stage">
+<div class="story-stage">
 
     <?php get_template_part( 'partials/page_hero' ); ?>
+
+    <?php get_template_part( 'partials/story/story_sections' ); ?>
 
 </div>
 

@@ -2,7 +2,9 @@
 /* footer */
 
 #footer {
-    margin-top:2em;
+    margin-top:4em;
+    padding-top: 2em;
+    background-color: lighten( $brand, 60 );
 }
 
 .menu-footer-navigation-container ul {
