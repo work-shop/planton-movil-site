@@ -5,11 +5,16 @@
 
 //brand colors
 $brand: #2B388F;
-$link: #D84949;
+//$link: #f6fd30;
+$link: #fcd52b;
 $brand-background: #81d742;
 
-$english: lighten( $brand, 7 );
-$espanol: darken( $brand, 7 );
+$english: #006e46;
+//$english: lighten( $brand, 7 );
+//$espanol: darken( $brand, 10 );
+//$espanol: #73802e;
+$espanol: #8c2c0e;
+//$espanol: #2B388F;
 
 $link-darker: darken( $link, 20 );
 $link-lighter: lighten( $link, 5 );
@@ -65,7 +70,8 @@ $yellow-darker: darken($yellow, 16%);
 
 $font-main: 'minimal mono', Courier, monospace;
 $font-italic: 'minimal mono', Courier, monospace;
-$font-bold: 'minimal mono', Courier, monospace;
+$font-bold: 'minimal mono bold', Courier, monospace;
+$font-black: 'minimal mono black', Courier, monospace;
 $font-medium-bold: 'minimal mono', Courier, monospace;
 $font-bold-italic: 'minimal mono', Courier, monospace;
 $font-medium: 'minimal mono', Courier, monospace;
@@ -77,4 +83,4 @@ $font-serif-italic: 'matol', Arial, Helvetica, sans-serif;
 $font-serif-bold: 'matol', Arial, Helvetica, sans-serif;
 $font-serif-bold-italic: 'matol', Arial, Helvetica, sans-serif;
 
-$upcoming-walk-height: 25vh;
+$upcoming-walk-height: 50vh;

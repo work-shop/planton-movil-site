@@ -12,11 +12,12 @@ function slickSlideshows( config ) {
 	    elem.slick({
 			slidesToShow: config.slidesToShow,
 			dots: config.dots,
-			arroews: config.arrows,
+            arrows: true,
+            prevArrow: false,
 			autoplay: false,
 			autoplaySpeed: config.autoplaySpeed,
 			speed: config.speed,
-            infinite: false
+            infinite: true
 		});
 
 	});

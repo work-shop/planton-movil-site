@@ -6,4 +6,6 @@
 
     <?php get_template_part('partials/home/home_upcoming_slide'); ?>
 
+    <?php get_template_part('partials/home/home_contact_slide'); ?>
+
 </div>

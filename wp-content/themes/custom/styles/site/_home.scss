@@ -1,17 +1,18 @@
 
 /* home page */
 
-
 .home-stage {
-    overflow-y: hidden;
+    height:100%;
+    overflow:hidden;
 }
 
 
 #background {
-    position:relative;
+    position:absolute;
     top:0;
     left:0;
-    height:100%;
+    height:100vh;
+    overflow:hidden;
 }
 
 
@@ -35,10 +36,10 @@
 }
 
 .home-slide {
-    height:calc(100vh - #{$nav-height});
-    position: relative;
-    overflow-y: scroll;
-    padding-top: 10vh;
+    height:100vh;
+    width:80%;
+    margin:auto;
+    position:relative;
 }
 
 .home-slide-content-relative {
@@ -49,4 +50,16 @@
 
 .home-slide-tagline {
     @include text-size($text-tagline);
+}
+
+.home-page-link {
+    background-color: $link;
+    color: white;
+    padding: .5em .5em 0.2em .5em;
+    border:2px solid transparent;
+
+    &:hover {
+        background-color: white;
+        border:2px solid $link;
+    }
 }

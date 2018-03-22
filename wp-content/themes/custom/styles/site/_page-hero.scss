@@ -1,11 +1,15 @@
 .page-hero {
-    height:80vh;
+    height:100vh;
 }
 
 .page-hero-content {
+
     position: relative;
     top:50%;
     transform: translateY(-50%);
+
+    margin-top: 2em;
+
 }
 
 /**
@@ -17,28 +21,68 @@
 }
 
 .page-hero-title-english {
-    @extend .bold;
-
     display: block;
-    text-align: left;
+    text-align: right;
     margin-bottom: .5em;
 }
 
 .page-hero-title-slash {
-    margin-left: .5em;
-    margin-right: .5em;
+    position: absolute;
+    top:-0.65em;
+    left:-0.35em;
 }
 
 .page-hero-title-espanol {
-    @extend .bold;
-
     display: block;
-    text-align: right;
+    text-align: left;
 }
 
 .page-hero-description {
     color:$brand;
 }
+
+.page-down-arrow {
+    display: none;
+    text-align: center;
+    vertical-align: center;
+}
+
+.page-down-arrow-button {
+    width:75px;
+    height:75px;
+    border-radius: 50px;
+    display: inline-block;
+
+    span:before {
+        padding-bottom: .1em;
+        top: -0.05em;
+    }
+}
+
+@include xs-query {
+    .page-hero-description {
+        display: none;
+    }
+
+    .page-down-arrow {
+        display: block;
+    }
+}
+
+@include sm-query {
+    .page-hero-description {
+        display: none;
+    }
+    .page-down-arrow {
+        display: block;
+    }
+}
+
+// @media ( max-width: $xs ) {
+//     .page-hero-description {
+//         display: none;
+//     }
+// }
 
 .page-hero-description-espanol {
     margin-top: 2em;
@@ -47,8 +91,6 @@
 
 
 .section-title-english {
-    @extend .bold;
-
     text-align: left;
 }
 
@@ -58,8 +100,6 @@
 }
 
 .section-title-espanol {
-    @extend .bold;
-
     text-align: left;
 }
 

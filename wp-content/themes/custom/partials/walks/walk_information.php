@@ -35,9 +35,9 @@
 
         <?php endif; ?>
     </div>
-    <div class="walk-overview col-sm-8 col-md-4 col-xs-6">
-        <p class="english"><?php echo $overview['english']; ?></p>
-        <p class="espanol"><?php echo $overview['espanol']; ?></p>
+    <div class="walk-overview col-sm-8 col-md-4 col-xs-12 mb2">
+        <p class="english mb1 bold"><?php echo $overview['english']; ?></p>
+        <p class="espanol bold"><?php echo $overview['espanol']; ?></p>
     </div>
     <div class="offset-xs-0 offset-sm-4 offset-md-0 col-sm-8 col-xs-12 col-md-4">
         <div class="row">

@@ -117,6 +117,18 @@ $text-nav: (
 	}
 }
 
+@include sm-query {
+    .logo {
+        display: none;
+    }
+}
+
+@include xs-query {
+    .logo {
+        display: none;
+    }
+}
+
 .hamburger-line {
     width:50px;
     height:4px;

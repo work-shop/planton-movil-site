@@ -10,13 +10,14 @@
         </div>
     </div>
 </menu>
+
 <nav id="nav" class="fixed">
 	<div class="container-fluid">
 		<div class="row">
             <div class="col-xs-1 col-sm-1">
                 <span class="icon menu-toggle" data-icon="Í"></span>
             </div>
-			<div class="logo">
+			<div class="logo col-xs-11 col-sm-11">
 				<a href="/">
 					<?php get_template_part('partials/logo'); ?>
 				</a>

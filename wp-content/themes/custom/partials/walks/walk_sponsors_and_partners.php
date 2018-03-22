@@ -1,5 +1,5 @@
 <?php if ( $partners || $sponsors ) : ?>
-<div class="col-sm-4">
+<div class="col-xs-6 col-sm-4">
     <?php if ( $sponsors && count( $sponsors ) > 0 ) : ?>
     <div class="row">
         <div class="col-sm-12">
@@ -13,7 +13,7 @@
 
         <?php foreach ($sponsors as $i => $sponsor) : ?>
             <div class="row">
-            <div class="col-sm-6 sponsor">
+            <div class="col-xs-6 col-sm-6 sponsor">
                 <a class="affiliate-logo-link" href="<?php echo $sponsor['sponsor_url']; ?>" target="_blank">
                     <img src="<?php echo $sponsor['sponsor_logo']['sizes']['medium']; ?>" alt="">
                 </a>

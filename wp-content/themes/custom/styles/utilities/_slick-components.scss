@@ -17,74 +17,81 @@
 	}
 }
 
+
 .slick-arrow{
 	position: absolute;
-	top: 50%;
+	bottom: 15%;
 	margin-top: -50px;
-	left: -40px;
+	left: 10%;
 	z-index: 2;
 	font-size: 0;
-	height: 100px;
-	width: 50px;
-	background: none;
+	height: 75px;
+	width: 75px;
+	background-color: $link;
 	border: none;
 	outline: none;
 	padding: 0;
-
-
-	@media screen and (max-width: $md) {
-		left: 0px;
-		height: 80px;
-		width: 30px;
-		top: 50%;
-		margin-top: -40px;
-	}	
+    border-radius: 50px;
+    transform: translateX(-50%);
+    display: none;
 
 	&:hover{
 		cursor: pointer;
 	}
 
 	&:after{
-		content: '‘';
+		content: 'Ó';
 		font-family: modern_pictograms_proregular;
-		display: block;
-		width: 50px;
-		height: 100px;
+
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translateX(-50%)translateY(-50%);
+
 		line-height: 100px;
 		font-size: 50px;
-		color: $medium-dark;
+		color: white;
 		text-align: center;
+
 
 		@media screen and (max-width: $md) {
 			width: 30px;
 			height: 80px;
 			line-height: 80px;
 			font-size: 33px;
-		}			
+		}
 	}
 
 	&.slick-next{
 		left: auto;
-		right: -40px;
+		right: 0%;
+        display: block;
 
 		@media screen and (max-width: $md) {
 			right: 0;
-		}			
+		}
 
 		&:after{
-			content: '—';			
+			content: 'Î';
 		}
 
 	}
 
+    &.slick-prev {
+        display: none;
+    }
+
 }
+
+
+
 
 .slick-dots{
 	position: absolute;
 	left: 50%;
 	@include transform(translate(-50%,0));
 	bottom: -30px;
-	
+
 	li{
 		display: inline-block;
 		margin-right: 10px;
@@ -100,7 +107,7 @@
 	button{
 		background: none;
 		border: none;
-		outline: none;	
+		outline: none;
 		font-size: 0;
 
 		display: block;
@@ -110,11 +117,11 @@
 
 		background: $light;
 		border: 1px solid $medium-dark;
-		border-radius: 10px;	
+		border-radius: 10px;
 
 		&:hover{
 			cursor: pointer;
-		}	
+		}
 
 	}
 }

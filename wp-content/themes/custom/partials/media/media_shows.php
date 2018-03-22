@@ -24,10 +24,10 @@
                     <div class="col-sm-6 mb2">
                         <div class="row">
                             <?php $image_url = wp_get_attachment_url( get_post_thumbnail_id( $item->ID ), 'thumbnail' ); ?>
-                            <div class="col-sm-4">
+                            <div class="col-xs-4 col-sm-4">
                                 <img class="show-bg-image" src="<?php echo $image_url; ?>" alt="" />
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-xs-8 col-sm-8">
                                 <a class="" href="<?php echo get_field('link', $item->ID ); ?>" target="_blank">
                                     <?php $date = DateTime::createFromFormat( 'Ymd', get_field('date', $item->ID ) ); ?>
                                     <p class="page-press-title bold medium-dark mb0"><span class="publicity-link"><?php echo $item->post_title; ?></span></p>

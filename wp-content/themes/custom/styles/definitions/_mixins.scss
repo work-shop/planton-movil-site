@@ -5,3 +5,33 @@
 @mixin transform( $properties ) {
     transform: $properties;
 }
+
+@mixin xs-query {
+    @media ( max-width: #{$xs} ) {
+        @content;
+    }
+}
+
+@mixin sm-query {
+    @media ( min-width: #{$xs} ) and ( max-width: #{$sm} ) {
+        @content;
+    }
+}
+
+@mixin md-query {
+    @media ( min-width: #{$sm} ) and ( max-width: #{$md} ) {
+        @content;
+    }
+}
+
+@mixin lg-query {
+    @media ( min-width: #{$md} ) and ( max-width: #{$lg} ) {
+        @content;
+    }
+}
+
+@mixin xl-query {
+    @media ( min-width: #{$lg} ) {
+        @content;
+    }
+}

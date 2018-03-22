@@ -75,39 +75,40 @@ img.gform_ajax_spinner {
 
 input,textarea{
 	@include transition(all .125s);
-	padding: 7px;
-	border: 1px solid $light;
-	border-radius: 4px;
+	padding: 1em;
+    border: none;
+	border-bottom: 2px solid $light;
 	outline: none;
 	width: 100%;
-	max-width: 300px;
 	color: $dark;
-
+    background-color: lighten( $brand, 60 );
 
 	&:focus{
 		outline: none;
-		border: 2px solid $brand;
+		border-bottom: 2px solid $brand;
 	}
 
 	&[type="submit"]{
+        @extend .bold;
 		@include text-size($text-button);
-		background: $yellow;
-		padding: 10px 10px;
-		font-family: $font-medium;
-		color: $dark;
+		background: $link;
+		padding: 1em;
+		color: white;
 		@extend .uppercase;
 		border-radius: 2px;
 		letter-spacing: .13em;
 		display: block;
 		width: 100%;
 		max-width: 180px;
-		text-align: center;
-		border: 2px solid $yellow;
+		text-align: baseline;
+		border: 2px solid transparent;
 		@include transition(background .125s);
 
 		&:hover{
 			background: white;
+            color: $link;
 			cursor: pointer;
+            border: 2px solid $link;
 		}
 
 		@media screen and (max-width: $sm) {

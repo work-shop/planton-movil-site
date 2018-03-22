@@ -1,8 +1,8 @@
 <div class="col-sm-8">
     <?php foreach( $questions as $j => $question ) : ?>
         <div class="row mb2">
-            <div class="col-sm-6">
-                <h5 class="english">
+            <div class="col-xs-6 col-sm-6">
+                <h5 class="english bold">
                     <?php echo $question['question']['english']; ?>
                 </h5>
                 <p class="small dark">
@@ -10,8 +10,8 @@
                 </p>
             </div>
 
-            <div class="col-sm-6">
-                <h5 class="espanol">
+            <div class="col-xs-6 col-sm-6">
+                <h5 class="espanol bold">
                     <?php echo $question['question']['espanol']; ?>
                 </h5>
                 <p class="small dark">

@@ -15,13 +15,18 @@ function homeBackground( config ) {
 
         $(window).on('resize', function() { setupHomeBackground( container, images, config ); });
 
-        $('.slick-home').on('beforeChange', function( e, slick, currentSlide, nextSlide ) {
+        homeBackgroundDrift( container, config );
 
-            container.data('current-slide', nextSlide);
-            container.animate({ left: -nextSlide * window.innerWidth }, 700);
+    });
 
-        });
+}
 
+
+function homeBackgroundDrift( container, config ) {
+
+    container.css({
+        transform: 'translateX(75%)',
+        transition: 'transform linear ' + config.driftDuration + 'ms'
     });
 
 }
@@ -32,10 +37,8 @@ function setupHomeBackground( container, images, config ) {
     var total_width = determineTotalWidth( config.slides );
     var position = container.data('current-slide');
 
-    console.log( position );
-
     container.width( total_width );
-    container.css({ left: -parseInt(position) * window.innerWidth, top: 0});
+    container.css({ left: (-total_width) + window.innerWidth, top: 0});
 
     images.each( function( i ) {
 
@@ -50,10 +53,20 @@ function setupHomeBackground( container, images, config ) {
 
 }
 
-function determineTotalWidth( slides ) { return window.innerWidth * slides; }
+function determineTotalWidth( slides ) {
+    if ( window.innerWidth >= 1000 ) {
+        return window.innerWidth * slides;
+    } else {
+        return window.innerWidth * 2 * slides;
+    }
+}
 
 function determineImageHorizontalPosition( image, i, width, images ) {
-    return ((width / images) * i) - (image.width() / 2);
+    if ( window.innerWidth >= 1000 ) {
+        return ((width / images) * i) - (image.width() / 2);
+    } else {
+        return ((width / images) * i);
+    }
 }
 
 function determineImageVerticalPosition( image, position ) {

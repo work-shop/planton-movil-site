@@ -7,12 +7,15 @@
     background-color: lighten( $brand, 60 );
 }
 
-.menu-footer-navigation-container ul {
+.menu-footer-navigation-container ul li {
+    display: inline;
+}
 
-    li {
-        display: inline;
+@include xs-query {
+    .menu-footer-navigation-container ul li {
+        margin-bottom: 1em;
+        display: block;
     }
-
 }
 
 .menu-item a {
@@ -33,6 +36,17 @@
     text-align: right;
 }
 
+@include xs-query {
+    .social {
+        width: 100%;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+}
+
+
+
 .social-icon {
     background-size: contain;
     background-repeat: no-repeat;
@@ -45,6 +59,16 @@
     }
 }
 
+@include xs-query {
+    .social-icon {
+        display: inline-block;
+        width: 25%;
+        background-position: bottom left;
+    }
+}
+
+
+
 .vimeo {
     background-image:url('../../images/vimeo.png');
 
@@ -55,6 +79,7 @@
 
 }
 
+
 .site-credit a h6 {
-    color: $light;
+    color: $medium;
 }

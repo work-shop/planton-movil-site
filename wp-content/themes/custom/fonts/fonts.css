@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'minimal mono';
+    font-family: 'minimal mono bold';
     src: url('MinimalMonoBold.ttf') format('truetype'),
          url('MinimalMonoBold.woff') format('woff');
     font-weight: bold;
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-    font-family: 'minimal mono';
+    font-family: 'minimal mono black';
     src: url('MinimalMonoBlack.ttf') format('truetype'),
          url('MinimalMonoBlack.woff') format('woff');
     font-weight: bolder;

@@ -8,7 +8,7 @@ $color = get_field( 'color', $id );
 <?php if ( $images ) : ?>
 <section class="walk-gallery container-fluid mb8">
     <div class="walk-gallery-title row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <h5 class="page-hero-tagline tagline bold">
                 <span class="section-title-english english bold">The Walk<span class="page-hero-title-slash">/</span></span>
                 <span class="section-title-espanol espanol bold">El Caminar</span>

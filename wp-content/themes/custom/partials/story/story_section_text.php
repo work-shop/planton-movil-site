@@ -19,10 +19,10 @@
 
 <div class="col-sm-<?php echo $size; ?> offset-sm-<?php echo $offset; ?>">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-6">
             <p class="small english"><?php echo $section['text']['english']; ?></p>
         </div>
-        <div class="col-sm-6 mt2">
+        <div class="col-xs-6 mt2">
             <p class="small espanol"><?php echo $section['text']['espanol']; ?></p>
         </div>
     </div>

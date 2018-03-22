@@ -53,10 +53,11 @@ class WS_Site {
             $compiled_resources_dir = get_template_directory() . '/compiled';
             $compiled_resources_uri = get_template_directory_uri() . '/compiled';
 
-            $main_css_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffixes for cache-busting.
-            $main_js_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffixes for cache-busting.
+            $fonts_css_ver = filemtime( get_template_directory() . $font_css ); // version suffices for cache-busting.
+            $main_css_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffices for cache-busting.
+            $main_js_ver = filemtime( $compiled_resources_dir . $main_css ); // version suffices for cache-busting.
 
-            wp_enqueue_style('font-css', get_template_directory_uri() . $font_css, array());
+            wp_enqueue_style('font-css', get_template_directory_uri() . $font_css, array(), $fonts_css_ver );
             wp_enqueue_style('main-css', $compiled_resources_uri . $main_css, array('font-css'), $main_css_ver);
             wp_enqueue_script('jquery');
             wp_enqueue_script('main-js', $compiled_resources_uri . $main_js, array('jquery'), $main_js_ver, true);

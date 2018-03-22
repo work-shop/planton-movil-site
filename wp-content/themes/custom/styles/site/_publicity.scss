@@ -1,9 +1,7 @@
 .publicity-link {
-    font-weight: bold;
     border-bottom: 2px solid transparent;
 
     &:hover {
-        font-weight: bold;
         border-bottom: 2px solid $medium-dark;
     }
 }

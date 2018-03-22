@@ -57,18 +57,19 @@ var config = {
     slickSlideshows: {
         defaultSelector: '.slick-default',
         slidesToShow: 1,
-        dots: true,
+        dots: false,
         arrows: true,
-        autoplay: true,
-        fade: true,
+        autoplay: false,
+        fade: false,
         autoplaySpeed: 10000,
-        speed: 700
+        speed: 750
     },
     home: {
         background: {
             selector: '#background'
         },
-        slides: 4
+        slides: 4,
+        driftDuration: 480000
     },
     imageMask: {
         defaultColor: '#ffffff',
@@ -78,6 +79,9 @@ var config = {
     },
     imageClipPath: {
 
+    },
+    pageHeroHeight: {
+        padding: 100
     }
 };
 

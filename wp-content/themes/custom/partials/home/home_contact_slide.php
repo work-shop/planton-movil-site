@@ -1,14 +1,15 @@
-<div class="home-slide row">
-    <div class="home-slide-content-relative offset-sm-1 col-sm-9">
-        <h1 class="home-slide-tagline bold mb1"><?php echo get_field('site_tagline', 8); ?></h1>
-        <?php if ( $links = get_field('links', 8) ) : ?>
-        <div class="home-slide-links">
-            <?php foreach ($links as $i => $link) : ?>
-
-                <a class="home-page-link" href="<?php echo $link['url']; ?>"><?php echo $link['link_text']; ?></a>
-
-            <?php endforeach; ?>
+<div id="contact" class="home-slide row">
+    <div class="home-slide-content-relative col-sm-6 offset-sm-1">
+        <div class="col-sm-6 offset-sm-3">
+            <?php $title = array('english' => 'Contact', 'espanol' => 'Contacto'); ?>
+            <?php $tag = 'h3'; ?>
+            <?php include( locate_template('partials/heading_english_espanol.php')); ?>
         </div>
-        <?php endif; ?>
+        <div class="contact-form">
+            <?php gravity_form( 1, false, false, false, '', true ); ?>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        
     </div>
 </div>

@@ -44,7 +44,7 @@
 
     ?>
 
-    <div class="col-xs-<?php echo $size; ?> offset-sm-<?php echo $offset; ?> mb2 mt2">
+    <div class="col-xs-10 offset-xs-1 col-sm-<?php echo $size; ?> offset-sm-<?php echo $offset; ?> mb2 mt2">
 
         <<?php echo $tag; ?> class="walk-gallery-image-block" <?php echo $href; ?> <?php echo $target; ?>>
             <img class="walk-gallery-image walk-gallery-image-large enlargeable-image" src="<?php echo $section['image']['url']; ?>">

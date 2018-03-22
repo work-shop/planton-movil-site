@@ -34,7 +34,7 @@ body{
 //massive, huge, large, medium, regular, small
 
 .h {
-    font-weight: bold;
+    font-weight: normal;
     color: $brand;
 }
 
@@ -75,13 +75,13 @@ p{
 
 //formatting
 
-.weight-medium {
+.bold, strong {
     font-family: $font-bold;
     font-weight: bold;
 }
 
-.bold, .weight-bold, strong{
-	font-family: $font-bold;
+.bolder {
+    font-family: $font-black;
 	font-weight: bolder;
 }
 
@@ -181,6 +181,11 @@ p{
 	&.large:before{
 		font-size: 72px;
 	}
+    &.centered:before {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 

@@ -66,6 +66,12 @@
 }
 
 
+@include xs-query() {
+    .hidden-xs {
+        display: none;
+    }
+}
+
 //visualize container-fluid extents
 // body:after{
 // 	content: '';

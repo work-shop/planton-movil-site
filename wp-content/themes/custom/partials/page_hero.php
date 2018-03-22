@@ -9,25 +9,30 @@
         </div>
     <?php endif; ?>
 
-    <div class="page-hero-content row">
-        <div class="col-sm-8 offset-sm-2">
+    <div class="page-hero-content row mb4">
+        <div class="col-xs-12 offset-xs-0">
             <?php /** @todo factor into module. */ ?>
             <?php $title = get_field('page_name', $page_ID ); ?>
             <?php $desc = get_field('page_description', $page_ID ); ?>
-            <h1 class="page-hero-tagline tagline bold">
-                <span class="page-hero-title-english english"><?php echo $title['english']; ?><span class="page-hero-title-slash">/</span></span>
-                <span class="page-hero-title-espanol espanol"><?php echo $title['espanol']; ?></span>
-            </h1>
-            <div class="page-hero-description row">
+            <?php $tag = 'h1' ?>
+            <?php include( locate_template('partials/heading_english_espanol.php') ); ?>
+        </div>
+        <div class="col-sm-10 offset-sm-1">
+            <div class="page-hero-description row hidden-xs">
                 <div class="col-sm-6">
                     <p class="page-hero-description-english english">
-                        <span class="color-backed"><?php echo $desc['english']; ?>
+                        <span class="color-backed bold"><?php echo $desc['english']; ?>
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="page-hero-description-espanol espanol">
-                        <span class="color-backed"><?php echo $desc['espanol']; ?></span>
+                        <span class="color-backed bold"><?php echo $desc['espanol']; ?></span>
                     </p>
+                </div>
+            </div>
+            <div class="page-down-arrow row visible-xs">
+                <div class="col-xs-8 offset-xs-2">
+                    <a href="#content" class="page-down-arrow-button home-page-link centered mt8"><span class="icon icon large " data-icon="Ï"></span></a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <div id="background" class="background">
-<?php foreach ( get_field( 'images', 8 ) as $key => $object ) : ?>
+<?php foreach ( array_reverse( get_field( 'images', 8 ) ) as $key => $object ) : ?>
 
     <div class="home-image-block" data-vertical-position="<?php echo $object['position'] ?>">
         <img class="home-image" src="<?php echo $object['image']['sizes']['large']; ?>" />

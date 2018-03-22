@@ -1,25 +1,26 @@
 <?php
     $page_ID = 292;
 ?>
-<div class="home-slide row">
-    <div class="home-slide-content-scrolling page-hero-content row">
-        <div class="col-sm-8 offset-sm-2">
-            <?php /** @todo factor into module. */ ?>
+<div class=" home-slide">
+    <div class="home-slide-content-relative page-hero-content row">
+        <div class="col-sm-10 offset-sm-1">
             <?php $title = get_field('page_name', $page_ID ); ?>
             <?php $desc = get_field('page_description', $page_ID ); ?>
-            <h1 class="page-hero-tagline tagline bold">
-                <span class="page-hero-title-english english"><?php echo $title['english']; ?><span class="page-hero-title-slash">/</span></span>
-                <span class="page-hero-title-espanol espanol"><?php echo $title['espanol']; ?></span>
-            </h1>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <?php $tag = 'h3'; ?>
+                    <?php include( locate_template('partials/heading_english_espanol.php') ); ?>
+                </div>
+            </div>
             <div class="page-hero-description row mb2">
                 <div class="col-sm-6">
                     <p class="page-hero-description-english english">
-                        <span class="color-backed bold"><?php echo $desc['english']; ?>
+                        <span class="color-backed bold small"><?php echo $desc['english']; ?>
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="page-hero-description-espanol espanol">
-                        <span class="color-backed bold"><?php echo $desc['espanol']; ?></span>
+                        <span class="color-backed bold small"><?php echo $desc['espanol']; ?></span>
                     </p>
                 </div>
             </div>
