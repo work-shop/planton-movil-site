@@ -1,5 +1,6 @@
 <?php
-    $page_ID = 292;
+    $story = get_page_by_path('story');
+    $page_ID = $story->ID;
 ?>
 <div class=" home-slide">
     <div class="home-slide-content-relative page-hero-content row">

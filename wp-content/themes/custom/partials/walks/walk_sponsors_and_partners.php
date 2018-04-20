@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h5 class="page-hero-tagline tagline bold">
-                <span class="section-title-english english bold">Sponsors<span class="page-hero-title-slash">/</span></span>
+                <span class="section-title-english english bold">Sponsors<span class="section-title-slash">/</span></span>
                 <span class="section-title-espanol espanol bold">Patrocinadores</span>
             </h5>
         </div>
@@ -29,7 +29,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h5 class="page-hero-tagline tagline bold">
-                <span class="section-title-english english bold">Partners<span class="page-hero-title-slash">/</span></span>
+                <span class="section-title-english english bold">Partners<span class="section-title-slash">/</span></span>
                 <span class="section-title-espanol espanol bold">Compañeros</span>
             </h5>
         </div>

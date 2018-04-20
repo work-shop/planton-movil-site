@@ -10,7 +10,7 @@ $color = get_field( 'color', $id );
     <div class="walk-gallery-title row">
         <div class="col-sm-6">
             <h5 class="page-hero-tagline tagline bold">
-                <span class="section-title-english english bold">The Walk<span class="page-hero-title-slash">/</span></span>
+                <span class="section-title-english english bold">The Walk<span class="section-title-slash">/</span></span>
                 <span class="section-title-espanol espanol bold">El Caminar</span>
             </h5>
         </div>
