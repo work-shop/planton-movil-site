@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <?php wp_nav_menu( array('menu' => 4) ); ?>
         </div>
     </div>

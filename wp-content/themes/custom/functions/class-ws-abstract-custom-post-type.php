@@ -52,6 +52,7 @@ abstract class WS_Custom_Post_Type {
                     'taxonomies' => array_merge( WS_Custom_Post_Type::default_for_key( 'taxonomy', $options, array()), array() ),
                     'has_archive' => WS_Custom_Post_Type::default_for_key( 'has_archive', $options, true),
                     'rewrite' => WS_Custom_Post_Type::default_for_key( 'rewrite', $options, array() ),
+                    'show_in_nav_menu' => WS_Custom_Post_Type::default_for_key( 'show_in_nav_menu', $options, false ),
                     'query_var' => true,
                     'can_export' => true,
                     'show_in_rest' => true

@@ -24,7 +24,8 @@ class PM_Walk extends WS_Custom_Post_Type {
                                         'feeds' => true,
                                         'pages' => true
                                     ),
-        'taxonomies'                => array( )
+        'taxonomies'                => array( ),
+        'show_in_nav_menu'          => true
 
     );
 
