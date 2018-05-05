@@ -1,10 +1,11 @@
 <?php
-    $image = get_field('header_image', $post->ID );
+    $image = ( $img = get_field('header_image', $post->ID ) ) ? $img : $upcoming_walk_image;
     $location = get_field('location', $post->ID );
     $date = DateTime::createFromFormat( 'Ymd', get_field('date', $post->ID ) );
     $color = get_field('color', $post->ID );
     $offset = ($single || $home) ? '0' : (($even) ? '4' : '1');
     $image_url = ($single || $home) ? $image['url'] : $image['sizes']['large'];
+    $image_url = ( $upcoming_walk_image ) ? $image['sizes']['large'] : $image_url;
     $title_tag = ($single || $home) ? 'h2' : 'h4';
     $date_tag = ($single || $home) ? 'h1' : 'h3';
 
@@ -18,16 +19,22 @@
         <div class="walk-card-box">
         <?php endif; ?>
 
-            <div class="clipped-blob clipped-image" data-color="<?php echo $color; ?>"></div>
+            <?php if ( $upcoming_walk_image ) : ?>
+                <img class="clipped-image" src="<?php echo $image_url; ?>"/>
+            <?php else: ?>
+                <div class="clipped-blob clipped-image" data-color="<?php echo $color; ?>"></div>
+            <?php endif; ?>
 
             <div class="walk-card-data">
                 <?php if ( !$home ) : ?>
                     <div class="walk-card-location">
                         <<?php echo $title_tag; ?> class="bold"><?php echo $location; ?></<?php echo $title_tag; ?>>
                     </div>
-                    <div class="walk-card-date">
-                        <<?php echo $date_tag; ?> class="bolder"><?php echo $date->format( 'F d, Y' ); ?></<?php echo $date_tag; ?>>
-                    </div>
+                    <?php if ( $date ) : ?>
+                        <div class="walk-card-date">
+                            <<?php echo $date_tag; ?> class="bolder"><?php echo $date->format( 'F d, Y' ); ?></<?php echo $date_tag; ?>>
+                        </div>
+                    <?php endif; ?>
                 <?php endif; ?>
 
                 <div class="walk-card-upcoming">

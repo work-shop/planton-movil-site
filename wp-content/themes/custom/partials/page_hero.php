@@ -30,6 +30,11 @@
                     </p>
                 </div>
             </div>
+            <?php if ( $page_ID == 5 ) : ?>
+                <div class="row centered mt2">
+                    <a class="home-page-link mr1" href="/#contact">Contact / Contacto</a>
+                </div>
+            <?php endif; ?>
             <div class="page-down-arrow row visible-xs">
                 <div class="col-xs-8 offset-xs-2">
                     <a href="#content" class="page-down-arrow-button home-page-link centered mt8"><span class="icon icon large " data-icon="Ï"></span></a>

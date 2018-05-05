@@ -1,6 +1,5 @@
 <?php
-    $id = get_the_ID();
-    $sections = get_field('sections', $id );
+    $sections = get_field( 'sections', $id );
 ?>
 
 <section class="walk-with-us-questions container-fluid mb2">

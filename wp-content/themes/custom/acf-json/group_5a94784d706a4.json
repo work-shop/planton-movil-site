@@ -3,6 +3,53 @@
     "title": "Walk with us",
     "fields": [
         {
+            "key": "field_5aedd75ff4c30",
+            "label": "Upcoming Walk",
+            "name": "upcoming_walk",
+            "type": "relationship",
+            "instructions": "Optionally, add a link to an upcoming walk to call out here, if you like.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "walks"
+            ],
+            "taxonomy": [],
+            "filters": "",
+            "elements": "",
+            "min": 0,
+            "max": 1,
+            "return_format": "object"
+        },
+        {
+            "key": "field_5aedd8c2ccd6f",
+            "label": "Upcoming Walk Image",
+            "name": "upcoming_walk_image",
+            "type": "image",
+            "instructions": "Optionally, add an image to display along with a link to this upcoming walk.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5a947853277f0",
             "label": "Sections",
             "name": "sections",
@@ -183,7 +230,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -363,5 +410,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1521473718
+    "modified": 1525537002
 }
