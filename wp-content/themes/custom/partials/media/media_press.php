@@ -12,7 +12,7 @@
 
         <div class="col-sm-3 offset-sm-1">
             <h5 class="page-hero-tagline tagline bold">
-                <span class="section-title-english english bold">Press<span class="page-hero-title-slash">/</span></span>
+                <span class="section-title-english english bold">Press<span class="section-title-slash">/</span></span>
                 <span class="section-title-espanol espanol bold">Prensa</span>
             </h5>
         </div>
