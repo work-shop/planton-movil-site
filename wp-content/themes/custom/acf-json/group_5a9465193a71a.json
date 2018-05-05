@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5aedcd59a8d9d",
+            "label": "Publication Document",
+            "name": "publication_document",
+            "type": "file",
+            "instructions": "Use this field to upload a PDF scan of this publication.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5a95bf3ca8644",
             "label": "Publication or Gallery Name",
             "name": "name",
@@ -77,5 +96,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1519763544
+    "modified": 1525534112
 }

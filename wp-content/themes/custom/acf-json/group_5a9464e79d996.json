@@ -362,7 +362,7 @@
                     "name": "workshop_name",
                     "type": "text",
                     "instructions": "What was this workshop's name?",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -935,5 +935,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1521482845
+    "modified": 1525534136
 }

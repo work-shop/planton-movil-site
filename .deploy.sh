@@ -10,8 +10,8 @@ source ./.env
 #docker exec $DOCKER_DATABASE_CONTAINER mysqldump -u$WORDPRESS_DB_USER -p$WORDPRESS_DB_PASSWORD $WORDPRESS_DB_NAME | sed -e "$SED_REPLACE" > ./dist/migration.sql
 
 scp -P $KINSTA_PORT -r ./wp-content/themes/custom $KINSTA_USER@$KINSTA_IP:./public/wp-content/themes
-scp -P $KINSTA_PORT -r ./wp-content/plugins $KINSTA_USER@$KINSTA_IP:./public/wp-content/
-scp -P $KINSTA_PORT -r ./wp-content/mu-plugins $KINSTA_USER@$KINSTA_IP:./public/wp-content/
+#scp -P $KINSTA_PORT -r ./wp-content/plugins $KINSTA_USER@$KINSTA_IP:./public/wp-content/
+#cp -P $KINSTA_PORT -r ./wp-content/mu-plugins $KINSTA_USER@$KINSTA_IP:./public/wp-content/
 # scp -P $KINSTA_PORT -r ./wp-content/uploads $KINSTA_USER@$KINSTA_IP:./public/wp-content/
 # rm -rf ./wp-content/uploads
 #scp -r ./dist/wp-content/uploads root@$DROPLET_IP:/var/www/html/wp-content/
