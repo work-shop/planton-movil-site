@@ -12,6 +12,7 @@ import { imageMask } from './image-mask.js';
 import { imageClipPath } from './image-clip-path.js';
 import { markupColor } from './markup-color.js';
 import { pageHeroHeight } from './page-hero-height.js';
+import { accordian } from './accordian.js';
 
 loading(config.loading);
 linksNewtab(config.linksNewtab);
@@ -24,5 +25,6 @@ imageClipPath( config.imageClipPath );
 markupColor( config.markupColor );
 pageHeroHeight( config.pageHeroHeight );
 imageMask( config.imageMask );
+accordian();
 
 console.log('main.js loaded');

@@ -180,3 +180,31 @@ a .walk-gallery-image-link-icon {
          color:$link;
      }
  }
+
+
+ // workshops
+
+ .walk-workshop-header-row {
+     border-bottom: 1px solid $medium-light;
+
+     &:hover .workshop-name {
+         cursor: pointer;
+         color: $link;
+     }
+
+ }
+
+ .accordian-state {
+     text-align: right;
+     float: right;
+
+     transition: transform $nav-transition-duration;
+ }
+
+ .accordian-state.closed {
+
+ }
+
+ .accordian-state.open {
+     transform: rotate(-90deg);
+ }
