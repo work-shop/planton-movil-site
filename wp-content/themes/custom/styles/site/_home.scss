@@ -63,3 +63,8 @@
         border:2px solid $link;
     }
 }
+
+.press-page-link {
+    @extend .home-page-link;
+
+}

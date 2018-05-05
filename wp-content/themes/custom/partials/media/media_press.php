@@ -19,13 +19,25 @@
         <div class="col-sm-7">
             <?php foreach ($press as $i => $item) : ?>
 
+                <?php $pdf = get_field('publication_document', $item->ID); ?>
+                <?php $link = get_field('link', $item->ID );  ?>
+
                 <div class="press-item row">
-                    <div class="col-sm-12 mb2">
-                        <a class="" href="<?php echo get_field('link', $item->ID ); ?>">
+                    <div class="col-sm-12 mb3">
+
+                        <?php if ( $link ) : ?><a class="" href="<?php echo $link ?>"><?php else : ?><span><?php endif; ?>
+
                             <?php $date = DateTime::createFromFormat( 'Ymd', get_field('date', $item->ID ) ); ?>
                             <p class="page-press-title bold medium-dark mb0"><span class="publicity-link"><?php echo $item->post_title; ?></span></p>
                             <p class="small medium"><?php echo $date->format('Y'); ?>. <?php echo get_field('name', $item->ID ); ?>.</p>
-                        </a>
+                        <?php if ( $link ) : ?></a><?php else : ?></span><?php endif; ?>
+
+                        <?php if ( $pdf ) : ?>
+                            <a class="small home-page-link" href="<?php echo $pdf['url']; ?>" target="_blank">
+                                View PDF
+                            </a>
+                        <?php endif; ?>
+
                     </div>
                 </div>
 
