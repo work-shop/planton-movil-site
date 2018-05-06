@@ -9,7 +9,7 @@
                 <div class="walk-workshop-header-row">
                     <span class="workshop-date mr2"><?php echo $date->format('F d, Y'); ?></span>
                     <span class="workshop-name bold brand"><?php echo $workshop['workshop_name']; ?></span>
-                    <span class="accordian-state righted closed pictogram"> < </span>
+                    <span class="accordian-state righted closed pictogram"> Ó </span>
                 </div>
             </div>
         </div>
