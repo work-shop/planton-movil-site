@@ -114,263 +114,6 @@
             ]
         },
         {
-            "key": "field_5a95b9e326758",
-            "label": "Story Slide",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5a95ba0126759",
-            "label": "Modify Story content here.",
-            "name": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Use the section below to modify the content on the story slide.",
-            "new_lines": "wpautop",
-            "esc_html": 0
-        },
-        {
-            "key": "field_5a95ba8d2675a",
-            "label": "Story Sections",
-            "name": "story_sections",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "block",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_5a95babf2675b",
-                    "label": "Section Type",
-                    "name": "section_type",
-                    "type": "select",
-                    "instructions": "Select from different types of story content here.",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "english": "English Text",
-                        "spanish": "Spanish Text",
-                        "image": "Image"
-                    },
-                    "default_value": [
-                        "english"
-                    ],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                },
-                {
-                    "key": "field_5a95bb382675c",
-                    "label": "English Text Section",
-                    "name": "",
-                    "type": "message",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "english"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "Use the fields below to add a block of English Text to the story.",
-                    "new_lines": "wpautop",
-                    "esc_html": 0
-                },
-                {
-                    "key": "field_5a95bba22675f",
-                    "label": "Spanish Text Section",
-                    "name": "",
-                    "type": "message",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "spanish"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "Add a block of Spanish text to the story.",
-                    "new_lines": "wpautop",
-                    "esc_html": 0
-                },
-                {
-                    "key": "field_5a95bb762675d",
-                    "label": "Text Block",
-                    "name": "text_block",
-                    "type": "textarea",
-                    "instructions": "Add a paragraph of text here.",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "english"
-                            }
-                        ],
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "spanish"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_5a95bc2e26760",
-                    "label": "Image Section",
-                    "name": "",
-                    "type": "message",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "image"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "Use this block to add an image section to the story.",
-                    "new_lines": "wpautop",
-                    "esc_html": 0
-                },
-                {
-                    "key": "field_5a95bc5226761",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "image"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5a95bc7626762",
-                    "label": "Position",
-                    "name": "position",
-                    "type": "select",
-                    "instructions": "Use this drop-down to choose whether the image is full width, half-width left-aligned, or half-width right aligned.",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a95babf2675b",
-                                "operator": "==",
-                                "value": "image"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "full_width": "Full Width Image",
-                        "left": "Left Aligned Image",
-                        "right": "Right Aligned Image"
-                    },
-                    "default_value": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                }
-            ]
-        },
-        {
             "key": "field_5a95bceacbdc1",
             "label": "Upcoming Walk Slide",
             "name": "",
@@ -429,6 +172,46 @@
             "min": "",
             "max": "",
             "return_format": "id"
+        },
+        {
+            "key": "field_5aef602d118f4",
+            "label": "Contact",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5aef6039118f5",
+            "label": "Contact Image",
+            "name": "contact_image",
+            "type": "image",
+            "instructions": "Use this field to add an image to be displayed next to the contact form on the site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -445,8 +228,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1520877069
+    "modified": 1525637212
 }
