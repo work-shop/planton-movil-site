@@ -37,7 +37,7 @@
             <?php endif; ?>
             <div class="page-down-arrow row visible-xs">
                 <div class="col-xs-8 offset-xs-2">
-                    <a href="#content" class="page-down-arrow-button home-page-link centered mt8"><span class="icon icon large " data-icon="Ï"></span></a>
+                    <a href="#body-content" class="jump page-down-arrow-button home-page-link centered mt8"><span class="icon icon large " data-icon="Ï"></span></a>
                 </div>
             </div>
         </div>

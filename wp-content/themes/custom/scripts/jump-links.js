@@ -15,9 +15,9 @@ function jumpLinks(config){
 			var offset = 0;
 
 			if( $(window).width() > config.mobileBreakpoint ){
-				offset = config.navHeight + config.jumpPadding;	
+				offset = config.navHeight + config.jumpPadding;
 			} else{
-				offset = config.mobileNavHeight + config.jumpPadding;	
+				offset = config.mobileNavHeight + config.jumpPadding;
 			}
 
 			$('html,body').animate({

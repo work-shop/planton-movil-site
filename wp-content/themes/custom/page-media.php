@@ -1,8 +1,8 @@
 <?php get_template_part('partials/header'); ?>
 
-<div class="media-stage">
+<?php get_template_part( 'partials/page_hero' ); ?>
 
-    <?php get_template_part( 'partials/page_hero' ); ?>
+<div id="body-content" class="media-stage">
 
     <?php get_template_part( 'partials/media/media_press' ); ?>
 
