@@ -5,8 +5,8 @@
                 <?php wp_nav_menu( array('menu' => 'Footer Navigation' )); ?>
             </div>
             <div class="social col-sm-4">
-                <a href="vimeo" class="social-icon vimeo">&nbsp;</a>
-                <a href="pinterest" class="social-icon pinterest">&nbsp;</a>
+                <a href="https://www.facebook.com/Plantonmovil/" target="_blank" class="social-icon facebook">&nbsp;</a>
+                <a href="https://www.instagram.com/plantonmovil/" target="_blank" class="social-icon instagram">&nbsp;</a>
             </div>
 		</div>
         <div class="row">
