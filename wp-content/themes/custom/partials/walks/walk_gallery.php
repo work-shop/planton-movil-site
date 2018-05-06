@@ -1,6 +1,6 @@
 <?php
 $description = get_field('about_the_walk', $id);
-$sounds = get_field('sound', $id);
+$sound = get_field('sound', $id);
 $images = get_field('images', $id);
 $color = get_field( 'color', $id );
 ?>
@@ -26,11 +26,12 @@ $color = get_field( 'color', $id );
     </div>
     <?php endif; ?>
     <?php if ($sound) : ?>
-    <div class="walk-gallery-sounds row mb1">
-    </div>
+
+        <?php include( locate_template('partials/walks/walk_sound.php') ) ?>
+
     <?php endif; ?>
 
-        <?php include( locate_template('partials/walks/walk_gallery_images.php') ); ?>
+    <?php include( locate_template('partials/walks/walk_gallery_images.php') ); ?>
 
 </section>
 <?php endif; ?>
