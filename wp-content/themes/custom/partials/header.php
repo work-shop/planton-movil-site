@@ -5,13 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>
-		<?php
-			if( wp_title() ){
-				wp_title();
-			} else{
-				bloginfo( 'name' ); echo ' - ';  bloginfo( 'description' );
-			}
-		?>
+		Plantón Móvil <?php wp_title('–'); ?>
 	</title>
 
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/compiled/images/favicon-16x16.png">
