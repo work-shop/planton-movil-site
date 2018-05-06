@@ -8,7 +8,8 @@
 }
 
 .menu-footer-navigation-container ul li {
-    display: inline;
+    display: block;
+    margin-bottom: 1em;
 }
 
 @include xs-query {
