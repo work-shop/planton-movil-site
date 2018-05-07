@@ -39,9 +39,9 @@
 
                 <div class="walk-card-upcoming">
                     <?php if ( $home ) :  ?>
-                        <?php $title = array('english' => 'Upcoming Walk!', 'espanol' => 'Próxima Caminata!') ?>
+                        <?php $title = array('english' => 'Upcoming Walk!', 'espanol' => 'El siguiente bosque!') ?>
                     <?php else : ?>
-                        <?php $title = array('english' => 'Join an upcoming walk!', 'espanol' => '¡Únete a una próxima caminata!') ?>
+                        <?php $title = array('english' => 'Join an upcoming walk!', 'espanol' => '¡Únete al siguiente bosque!') ?>
                     <?php endif; ?>
                     <?php $tag = 'h2' ?>
                     <?php $classes = 'link bolder'; ?>

@@ -11,7 +11,7 @@ $color = get_field( 'color', $id );
         <div class="col-sm-6">
             <h5 class="page-hero-tagline tagline bold">
                 <span class="section-title-english english bold">The Walk<span class="section-title-slash">/</span></span>
-                <span class="section-title-espanol espanol bold">El Caminar</span>
+                <span class="section-title-espanol espanol bold">El bosque</span>
             </h5>
         </div>
     </div>

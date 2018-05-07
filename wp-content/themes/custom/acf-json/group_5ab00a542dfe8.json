@@ -220,7 +220,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "the_content",
         "excerpt",
         "custom_fields",
@@ -238,5 +237,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525391715
+    "modified": 1525704467
 }

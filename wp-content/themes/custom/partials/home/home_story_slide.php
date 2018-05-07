@@ -1,5 +1,5 @@
 <?php
-    $story = get_page_by_path('story');
+    $story = get_page_by_path('about');
     $page_ID = $story->ID;
 ?>
 <div class=" home-slide">

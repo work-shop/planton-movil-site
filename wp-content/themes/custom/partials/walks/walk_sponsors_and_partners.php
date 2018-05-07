@@ -30,7 +30,7 @@
         <div class="col-sm-12">
             <h5 class="page-hero-tagline tagline bold">
                 <span class="section-title-english english bold">Partners<span class="section-title-slash">/</span></span>
-                <span class="section-title-espanol espanol bold">Compañeros</span>
+                <span class="section-title-espanol espanol bold">Colaboradores</span>
             </h5>
         </div>
         <div class="col-sm-12 mb4">

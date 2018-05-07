@@ -389,6 +389,24 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_5af06d568cb13",
+            "label": "Contact Email",
+            "name": "contact_email",
+            "type": "email",
+            "instructions": "Add a contact email for the footer of this page here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -410,5 +428,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525537002
+    "modified": 1525706097
 }

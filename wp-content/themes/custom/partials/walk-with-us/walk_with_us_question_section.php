@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="question-section-header col-sm-8 offset-sm-2 col-xs-12 mb2">
+    <div class="question-section-header col-sm-8 offset-sm-2 col-xs-12 mb4">
         <div class="question-section-title">
             <?php $title = $section['title']; ?>
             <?php $tag = 'h3'; ?>
@@ -37,4 +37,10 @@
 
         </div>
     </div>
+    <?php if ( $section['download_link']['name'] && $section['download_link']['file'] ) : ?>
+    <?php $positioning = ( $even ) ? 'col-sm-8 offset-sm-0' : 'col-sm-8 offset-sm-2' ; ?>
+    <div class="question-document <?php echo $positioning; ?> col-xs-12 mb2 centered">
+        <a class="home-page-link"target="_blank" href="<?php echo $section['download_link']['file']['url']; ?>"><?php echo $section['download_link']['name']; ?></a>
+    </div>
+    <?php endif; ?>
 </div>
