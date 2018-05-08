@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <img class="enlargeable-image poster shadow" src="<?php echo $posters[0]['sizes']['large']; ?>" />
+                <img class="enlargeable-image poster shadow" src="<?php echo $posters[0]['url']; ?>" />
                 <p class="smaller medium"><?php echo $posters[0]['caption']; ?></p>
             </div>
         </div>

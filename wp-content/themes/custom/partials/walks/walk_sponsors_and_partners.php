@@ -37,7 +37,7 @@
 
         <?php foreach ($partners as $i => $partner) : ?>
             <div class="row">
-            <div class="col-sm-4 partner affiliate-logo">
+            <div class="col-sm-6 partner affiliate-logo">
                 <a class="affiliate-logo-link" href="<?php echo $partner['partner_url']; ?>" target="_blank">
                     <img src="<?php echo $partner['partner_logo']['sizes']['medium']; ?>" alt="">
                 </a>

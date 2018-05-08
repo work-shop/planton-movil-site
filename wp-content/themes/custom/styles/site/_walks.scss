@@ -114,12 +114,23 @@ a.walk-card-box:hover {
  }
 
  .walk-gallery-image-block {
+
+     .walk-gallery-image-caption {
+         color:rgba(255,255,255,0);
+         transition: color 750ms;
+     }
+
+
      &:hover .walk-gallery-image-link-icon {
          display: none;
      }
 
      &:hover .walk-gallery-image-link-icon-title {
          opacity: 1 !important;
+     }
+
+     &:hover .walk-gallery-image-caption {
+         @extend .medium;
      }
 
  }

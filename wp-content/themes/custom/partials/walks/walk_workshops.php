@@ -9,7 +9,7 @@ $workshops = get_field('workshops', $id);
         <div class="col-sm-6">
             <h5 class="page-hero-tagline tagline bold">
                 <span class="section-title-english english bold">Workshops<span class="section-title-slash">/</span></span>
-                <span class="section-title-espanol espanol bold">Workshops</span>
+                <span class="section-title-espanol espanol bold">Talleres</span>
             </h5>
         </div>
     </div>

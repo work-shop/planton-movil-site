@@ -16,7 +16,14 @@ function imageClipPath( config ) {
             const xb = get_bounded_random_value( rng, 50, 65 );
             const yb = get_bounded_random_value( rng, 70, 75 );
 
-            elem.css({ clipPath: build_clip_path( xt, yt, xb, yb ) });
+            const clipPath = build_clip_path( xt, yt, xb, yb )
+
+            //elem.css('-webkit-clip-path', clipPath );
+
+            elem.css({
+                clipPath: clipPath,
+                '-webkit-clip-path': clipPath
+             });
 
         });
 

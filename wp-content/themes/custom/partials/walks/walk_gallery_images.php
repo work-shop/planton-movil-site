@@ -44,8 +44,9 @@
                     <?php endif; ?>
                 </div>
 
-                <?php if ($image['caption']) : ?>
-                    <p class="smaller medium"><?php echo $image['caption']; ?></p>
+
+                <?php if ( $image['image']['caption']) : ?>
+                    <p class="smaller walk-gallery-image-caption mt1"><?php echo $image['image']['caption']; ?></p>
                 <?php endif; ?>
 
             </<?php echo $tag; ?>>
