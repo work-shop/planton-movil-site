@@ -3,6 +3,7 @@
 
 class WS_Site_Admin {
 
+
     public function __construct() {
 
         add_action('admin_menu', array( $this, 'manage_admin_menu_options' ) );
@@ -10,6 +11,36 @@ class WS_Site_Admin {
 
         add_action('wp_dashboard_setup', array($this, 'remove_dashboard_widgets') );
         add_action('wp_before_admin_bar_render', array($this, 'remove_admin_bar_items'));
+        add_action('admin_head', array( $this, 'grant_editor_access' ) );
+        add_action('switch_theme', array( $this, 'revoke_editor_access' ) );
+
+    }
+
+
+
+    public static $capabilities = array( 'gform_full_access', 'edit_theme_options' );
+
+    public function grant_editor_access() {
+
+        $role = get_role('editor');
+
+        foreach ( self::$capabilities as $capability) {
+            if ( !$role->has_cap( $capability ) ) {
+                $role->add_cap( $capability );
+            }
+        }
+
+    }
+
+    public function revoke_editor_access() {
+
+        $role = get_role('editor');
+
+        foreach ( self::$capabilities as $capability) {
+            if ( $role->has_cap( $capability ) ) {
+                $role->remove_cap( $capability );
+            }
+        }
 
     }
 
@@ -31,6 +62,7 @@ class WS_Site_Admin {
         remove_menu_page('edit-comments.php');   // Remove the comments link from the Wordpress sidebar.
 
         if ( !current_user_can( 'administrator' ) ) {
+            remove_menu_page('tools.php');
             remove_menu_page('admin.php?page=wc-settings'); // Remove WC Configuration Settings
             remove_menu_page('admin.php?page=gf_edit_forms'); // Remove Gravity Forms Edit Page
 

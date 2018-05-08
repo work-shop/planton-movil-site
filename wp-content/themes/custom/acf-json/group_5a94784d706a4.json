@@ -335,7 +335,7 @@
                 },
                 {
                     "key": "field_5a947a32186a1",
-                    "label": "Download Link",
+                    "label": "Link",
                     "name": "download_link",
                     "type": "group",
                     "instructions": "If you have a PDF of printable document that answers the questions addressed in this section, provide a link to it here!",
@@ -348,6 +348,25 @@
                     },
                     "layout": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5af1ec2147b8c",
+                            "label": "Link Type",
+                            "name": "link_type",
+                            "type": "true_false",
+                            "instructions": "Toggle this to switch this link between a URL and file download link.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Link",
+                            "ui_off_text": "Download"
+                        },
                         {
                             "key": "field_5a947a5a186a2",
                             "label": "Name",
@@ -374,7 +393,15 @@
                             "type": "file",
                             "instructions": "The file to provide.",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5af1ec2147b8c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -385,6 +412,30 @@
                             "min_size": "",
                             "max_size": "",
                             "mime_types": "pdf"
+                        },
+                        {
+                            "key": "field_5af1ec6d47b8d",
+                            "label": "URL",
+                            "name": "url",
+                            "type": "url",
+                            "instructions": "Enter a URL to link to here.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5af1ec2147b8c",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
                         }
                     ]
                 }
@@ -428,5 +479,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525706097
+    "modified": 1525804175
 }

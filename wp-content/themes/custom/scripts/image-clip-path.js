@@ -18,8 +18,6 @@ function imageClipPath( config ) {
 
             const clipPath = build_clip_path( xt, yt, xb, yb )
 
-            //elem.css('-webkit-clip-path', clipPath );
-
             elem.css({
                 clipPath: clipPath,
                 '-webkit-clip-path': clipPath
