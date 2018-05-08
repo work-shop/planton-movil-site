@@ -53,9 +53,11 @@
 }
 
 .home-page-link {
+    display: inline-block;
     background-color: $link;
     color: white;
     padding: .5em .5em 0.2em .5em;
+    margin-bottom: .5em;
     border:2px solid transparent;
 
     &:hover {
