@@ -4,6 +4,8 @@
 
 <div id="body-content" class="story-stage">
 
+    <?php get_template_part( 'partials/story/story_summary' ); ?>
+
     <?php get_template_part( 'partials/story/story_sections' ); ?>
 
     <?php get_template_part( 'partials/page_callout' ); ?>

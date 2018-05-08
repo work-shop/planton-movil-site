@@ -22,7 +22,7 @@ var config = {
         selector: '.jump',
         navHeight: global_config.navHeight,
         mobileNavHeight: global_config.mobileNavHeight,
-        jumpPadding: 0,
+        jumpPadding: 30,
         mobileJumpPadding: global_config.navPadding,
         mobileBreakpoint: global_config.mobileBreakpoint,
         transitionDuration: global_config.transitionDuration,

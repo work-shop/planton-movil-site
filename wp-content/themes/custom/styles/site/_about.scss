@@ -1,2 +1,15 @@
 
 /* about page */
+
+
+@include md-query {
+    .about-summary {
+        display:none;
+    }
+}
+
+@include lg-query {
+    .about-summary {
+        display:none;
+    }
+}

@@ -6,7 +6,7 @@
     $color = $hero_image['image_tint_color'];
 
 ?>
-<section class="story-sections container-fluid mt2">
+<section class="story-sections container-fluid">
     <?php foreach ($sections as $i => $section ) : ?>
         <div class="row">
 
