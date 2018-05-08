@@ -117,7 +117,7 @@ a.walk-card-box:hover {
 
      .walk-gallery-image-caption {
          color:rgba(255,255,255,0);
-         transition: color 750ms;
+         transition: color $caption-transition $caption-timing-function;
      }
 
 

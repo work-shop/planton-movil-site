@@ -53,6 +53,8 @@ $container-fluid-sum-mobile: $container-fluid-padding-mobile * 2;
 //transitions
 $modal-transition: .35s;
 $nav-transition-duration: 250ms;
+$caption-transition: 1s;
+$caption-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
 
 //breakpoints
