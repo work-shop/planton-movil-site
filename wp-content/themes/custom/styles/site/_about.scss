@@ -13,3 +13,9 @@
         display:none;
     }
 }
+
+@include xl-query {
+    .about-summary {
+        display:none;
+    }
+}
