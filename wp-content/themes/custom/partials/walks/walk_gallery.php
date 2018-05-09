@@ -1,6 +1,7 @@
 <?php
 $description = get_field('about_the_walk', $id);
 $sound = get_field('sound', $id);
+$sound_description = get_field('description_of_the_sound', $id);
 $images = get_field('images', $id);
 $color = get_field( 'color', $id );
 ?>
