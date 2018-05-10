@@ -212,6 +212,103 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5af48f1e5a878",
+            "label": "Social",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5af48f4d5a879",
+            "label": "Site Social Media Image",
+            "name": "site_social_media_image",
+            "type": "image",
+            "instructions": "Upload an image to feature when the site is posted on social media here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5af48f675a87a",
+            "label": "Instagram",
+            "name": "instagram",
+            "type": "text",
+            "instructions": "Add the Plantón Móvil Instagram handle here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5af48f895a87b",
+            "label": "Facebook",
+            "name": "facebook",
+            "type": "text",
+            "instructions": "Add the Plantón Móvil Facebook name here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5af48fa05a87c",
+            "label": "Twitter",
+            "name": "twitter",
+            "type": "text",
+            "instructions": "Add the Plantón Móvil Twitter handle here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -233,5 +330,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525637702
+    "modified": 1525976993
 }

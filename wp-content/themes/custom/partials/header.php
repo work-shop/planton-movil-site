@@ -13,9 +13,9 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_directory'); ?>/compiled/images/favicon-96x96.png">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/images/apple-icon.png">
 
-	<meta name="description" content="<?php bloginfo('description'); ?>">
-	<meta name="author" content="Work-Shop">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <?php get_template_part('partials/site_social'); ?>
 
     <?php get_template_part('partials/site_analytics'); ?>
 
