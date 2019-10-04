@@ -30,7 +30,7 @@
         <div class="col-xs-<?php echo $size; ?> mb2">
 
             <<?php echo $tag; ?> class="walk-gallery-image-block" <?php echo $href; ?> <?php echo $target; ?>>
-                <img class="walk-gallery-image walk-gallery-image-large enlargeable-image" src="<?php echo $image['image']['url']; ?>">
+                <img class="walk-gallery-image walk-gallery-image-large enlargeable-image" src="<?php echo $image['image']['sizes']['large']; ?>">
 
                 <?php if ( $image['link'] != '') : ?>
                     <span class="bold icon large walk-gallery-image-link-icon" data-icon="Å"></span>

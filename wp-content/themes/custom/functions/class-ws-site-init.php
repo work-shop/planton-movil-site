@@ -30,6 +30,7 @@ class WS_Site {
 
             add_image_size('social_card', 600, 600, array( 'x_crop_position' => 'center', 'y_crop_position' => 'center'));
             add_image_size('large', 1024, 720, false);
+            add_image_size('medium-large', 768, 540, false);
 
         }
     }
